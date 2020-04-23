@@ -2,4 +2,6 @@
     <string name="app_name">Olymbus</string>
     <string name="your_schedule">ํYour Schedule</string>
     <string name="bus_time_table">Bus Time Table</string>
+    <string name="detail_image">Image</string>
+
 </resources>
