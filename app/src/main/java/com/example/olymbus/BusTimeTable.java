@@ -20,7 +20,7 @@ public class BusTimeTable extends AppCompatActivity {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {
         super.onCreate(savedInstanceState, persistentState);
-        setContentView(R.layout.fragment_bustimetable);
+        setContentView(R.layout.layout_bustimetable);
 
         lsv = (ListView)findViewById(R.id.listview_bustimetable); //ติดกับลิสวิวบนหน้าจอ
 
