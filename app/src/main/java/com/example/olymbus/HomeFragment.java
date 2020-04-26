@@ -24,21 +24,6 @@ public class HomeFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_home,container,false);
 
-        String [] eventMenu = {"Swimming 1","Swimming 2"};
-
-        ListView listView = view.findViewById(R.id.eventListView);
-        ArrayAdapter<String> listViewAdapter = new ArrayAdapter<String>( getActivity() ,
-                android.R.layout.simple_list_item_1 , eventMenu);
-        listView.setAdapter(listViewAdapter);
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent showDetailActivity = new Intent(getActivity() , EventDetailActivity.class);
-//                showDetailActivity.putExtra("com.example.ITEM_INDEX" , position);
-                startActivity(showDetailActivity);
-                }
-            });
         return view;
         };
 }
