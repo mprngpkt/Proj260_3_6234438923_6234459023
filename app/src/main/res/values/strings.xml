@@ -5,7 +5,8 @@
     <string name="detail_image">Image</string>
     <string name="event_name">TextView</string>
     <string name="event_icon">Icon</string>
-
     <string name="d_swim1">Swimming 1 detail</string>
+    <string name="d_swim2">Swimming 2 detail</string>
+
 
 </resources>

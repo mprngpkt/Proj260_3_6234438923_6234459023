@@ -12,7 +12,7 @@
         android:id="@+id/Sub_title"
         android:textSize="30sp">
     </TextView>
-
+    
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="180dp"
