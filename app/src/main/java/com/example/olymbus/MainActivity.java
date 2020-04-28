@@ -40,7 +40,14 @@ public class MainActivity extends AppCompatActivity {
             getSupportFragmentManager().beginTransaction().add(R.id.displayDetail,
                     detailFragment).commit();
         }
+/*
+        //let's pd try sth
 
+        SeatingPlan seatingPlanFragment = new SeatingPlan();
+        FragmentManager fm = getSupportFragmentManager();
+
+        fm.beginTransaction().add(R.id.btnBack,seatingPlanFragment).commit();
+*/
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener navListener =
