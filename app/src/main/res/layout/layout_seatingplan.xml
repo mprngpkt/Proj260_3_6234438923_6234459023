@@ -1,6 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TableLayout
+        android:id="@+id/seatcolumn"
+        android:layout_width="160dp"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:id="@+id/seat1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/seat"
+                android:contentDescription="@string/seat" />
+
+            <ImageButton
+                android:id="@+id/seat2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/seat"
+                android:contentDescription="@string/seat" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/seat3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/seat"
+                android:contentDescription="@string/seat" />
+
+            <ImageButton
+                android:id="@+id/seat4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/seat"
+                android:contentDescription="@string/seat" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/seat5"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/seat"
+                android:contentDescription="@string/seat" />
+
+
+            <ImageButton
+                android:id="@+id/seat6"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/seat"
+                android:contentDescription="@string/seat" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/seat7"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/seat"
+                android:contentDescription="@string/seat" />
+
+            <ImageButton
+                android:id="@+id/seat8"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/seat"
+                android:contentDescription="@string/seat" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/seat9"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/seat"
+                android:contentDescription="@string/seat" />
+
+
+            <ImageButton
+                android:id="@+id/seat10"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/seat"
+                android:contentDescription="@string/seat" />
+        </TableRow>
+    </TableLayout>
+
+
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seatcolumn"
+        app:layout_constraintVertical_bias="0.7" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seatcolumn"
+        app:srcCompat="@drawable/driver" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seat_plan"
+        android:textColor="#28527A"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/seatcolumn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
