@@ -22,7 +22,7 @@ public class BusTimeTable extends AppCompatActivity {
         super.onCreate(savedInstanceState, persistentState);
         setContentView(R.layout.layout_bustimetable);
 
-        lsv = (ListView)findViewById(R.id.listview_bustimetable); //ติดกับลิสวิวบนหน้าจอ
+        lsv = (ListView)findViewById(R.id.bustimetable); //ติดกับลิสวิวบนหน้าจอ
 
         //เก็บข้อความ
         lstitle = new String[]

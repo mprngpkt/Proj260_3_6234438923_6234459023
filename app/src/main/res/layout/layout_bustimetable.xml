@@ -5,7 +5,7 @@
 
 
     <ListView
-        android:id="@+id/listview_bustimetable"
+        android:id="@+id/bustimetable"
         android:layout_width="match_parent"
         android:layout_height="454dp"
         android:layout_alignParentStart="true"
