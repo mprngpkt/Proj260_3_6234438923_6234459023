@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -18,9 +19,12 @@ import androidx.fragment.app.Fragment;
 
 public class HomeFragment extends Fragment {
 
+
+    private TextView textView;
+
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull final LayoutInflater inflater, @Nullable final ViewGroup container, @Nullable Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_home,container,false);
 
@@ -29,13 +33,21 @@ public class HomeFragment extends Fragment {
                 "Diving Synchronized 3m Springboard Final","Diving 10m Platform Semifinal",
                 "Weightlifting 40 kg Group B","Weightlifting 76 kg Group B","Weightlifting 109 kg Group B",
                 "Weightlifting 109 kg Group A & Victory Ceremony"};
-        ListView listView = view.findViewById(R.id.eventListView);
+        final ListView listView = view.findViewById(R.id.eventListView);
+
         ArrayAdapter<String> listViewAdapter = new ArrayAdapter<String>(getActivity(),
                 android.R.layout.simple_list_item_1,eventItems);
         listView.setAdapter(listViewAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                switch (position){
+                    case 0:
+                    case 1: textView.setText("Click 2");
+                    case 3: textView.setText("Click 3");
+
+                }
 
 
             }
