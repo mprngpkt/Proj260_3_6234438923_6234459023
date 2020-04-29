@@ -24,6 +24,22 @@ public class HomeFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_home,container,false);
 
+        String[] eventItems = {"Ceremony Opening Ceremony","Athletics Marathon Final",
+                "Swimming Preliminary","Swimming Freestyle/Medley","Diving Springboard Semifinal",
+                "Diving Synchronized 3m Springboard Final","Diving 10m Platform Semifinal",
+                "Weightlifting 40 kg Group B","Weightlifting 76 kg Group B","Weightlifting 109 kg Group B",
+                "Weightlifting 109 kg Group A & Victory Ceremony"};
+        ListView listView = view.findViewById(R.id.eventListView);
+        ArrayAdapter<String> listViewAdapter = new ArrayAdapter<String>(getActivity(),
+                android.R.layout.simple_list_item_1,eventItems);
+        listView.setAdapter(listViewAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+
+            }
+        });
         return view;
         };
 }

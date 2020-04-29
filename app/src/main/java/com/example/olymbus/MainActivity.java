@@ -26,20 +26,6 @@ public class MainActivity extends AppCompatActivity {
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                 new HomeFragment()).commit();
 
-        if(findViewById(R.id.displayList)!=null){
-            ListFragment listFragment = new ListFragment();
-            listFragment.setArguments(getIntent().getExtras());
-            getSupportFragmentManager().beginTransaction().add(R.id.displayList,
-                    listFragment).commit();
-        }
-
-        if(findViewById(R.id.displayDetail)!=null){
-            getFragmentManager().popBackStack();
-            DetailFragment detailFragment = new DetailFragment();
-            detailFragment.setArguments(getIntent().getExtras());
-            getSupportFragmentManager().beginTransaction().add(R.id.displayDetail,
-                    detailFragment).commit();
-        }
 /*
         //let's pd try sth
 
@@ -69,9 +55,4 @@ public class MainActivity extends AppCompatActivity {
 
             };
 
-
-/*    public void onMobileSelected(String Model, int position){
-        DetailFragment detailFragment = (DetailFragment)
-                getFragmentManager().findFragmentById(R.id.displayDetail);
-    }*/
 }
