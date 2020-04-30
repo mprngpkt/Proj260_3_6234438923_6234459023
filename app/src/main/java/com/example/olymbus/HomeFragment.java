@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,23 +20,34 @@ import androidx.fragment.app.Fragment;
 
 public class HomeFragment extends Fragment {
 
-
+    private Button startButton;
     private TextView textView;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull final LayoutInflater inflater, @Nullable final ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_home,container,false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        String[] eventItems = {"Ceremony Opening Ceremony","Athletics Marathon Final",
-                "Swimming Preliminary","Swimming Freestyle/Medley","Diving Springboard Semifinal",
-                "Diving Synchronized 3m Springboard Final","Diving 10m Platform Semifinal",
-                "Weightlifting 40 kg Group B","Weightlifting 76 kg Group B","Weightlifting 109 kg Group B",
-                "Weightlifting 109 kg Group A & Victory Ceremony"};
-        final ListView listView = view.findViewById(R.id.eventListView);
+        startButton = (Button) view.findViewById(R.id.homeButton);
 
-        ArrayAdapter<String> listViewAdapter = new ArrayAdapter<String>(getActivity(),
+        startButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(getActivity(), EventListActivity.class);
+                startActivity(in);
+            }
+
+        /*String[] eventItems = {"Ceremony Opening Ceremony", "Athletics Marathon Final",
+                "Swimming Preliminary", "Swimming Freestyle/Medley", "Diving Springboard Semifinal",
+                "Diving Synchronized 3m Springboard Final", "Diving 10m Platform Semifinal",
+                "Weightlifting 40 kg Group B", "Weightlifting 76 kg Group B", "Weightlifting 109 kg Group B",
+                "Weightlifting 109 kg Group A & Victory Ceremony"};*/
+        //final ListView listView = view.findViewById(R.id.eventListView);
+
+        });
+
+/*        ArrayAdapter<String> listViewAdapter = new ArrayAdapter<String>(getActivity(),
                 android.R.layout.simple_list_item_1,eventItems);
         listView.setAdapter(listViewAdapter);
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -49,9 +61,11 @@ public class HomeFragment extends Fragment {
 
                 }
 
-
             }
-        });
+        });*/
         return view;
-        };
+    };
+
 }
+
+
