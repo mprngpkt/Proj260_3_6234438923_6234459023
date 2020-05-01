@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 /*
         //let's pd try sth
 
-        SeatingPlan seatingPlanFragment = new SeatingPlan();
+        SeatingPlan1_1 seatingPlanFragment = new SeatingPlan1_1();
         FragmentManager fm = getSupportFragmentManager();
 
         fm.beginTransaction().add(R.id.btnBack,seatingPlanFragment).commit();
