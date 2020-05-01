@@ -31,6 +31,7 @@ public class SeatingPlan extends Fragment {
         View v = inflater.inflate(R.layout.layout_seatingplan, container, false);
 
         //1A
+       // btnseat1A = (Button) v.findViewById (R.id.seat1A);
 
 
         //back
