@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/relativeLayout">
@@ -9,14 +10,12 @@
         android:id="@+id/weightliftingButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="52dp"
-        android:layout_marginRight="52dp"
+        android:layout_marginTop="308dp"
         android:contentDescription="@string/description_image"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.847"
-        app:layout_constraintStart_toEndOf="@+id/divingButton"
-        app:layout_constraintTop_toBottomOf="@+id/marathonButton"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/projectName"
         app:srcCompat="@drawable/ic_weightlifting100" />
 
     <TextView
@@ -28,7 +27,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="16dp"
         android:gravity="center"
         android:text="@string/project_name"
         android:textColor="@color/blue"
@@ -44,47 +43,47 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="52dp"
         android:layout_marginLeft="52dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/description_image"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/projectName"
-        app:srcCompat="@drawable/ic_ceremony100"
-        android:contentDescription="@string/description_image" />
+        app:srcCompat="@drawable/ic_ceremony100" />
 
     <ImageButton
         android:id="@+id/divingButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="52dp"
-        android:layout_marginLeft="52dp"
+        android:layout_marginStart="224dp"
+        android:layout_marginLeft="224dp"
         android:layout_marginTop="24dp"
+        android:contentDescription="@string/description_image"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ceremonyButton"
-        app:srcCompat="@drawable/ic_diving100"
-        android:contentDescription="@string/description_image" />
+        app:layout_constraintTop_toBottomOf="@+id/marathonButton"
+        app:srcCompat="@drawable/ic_diving100" />
 
     <ImageButton
         android:id="@+id/marathonButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:contentDescription="@string/description_image"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toEndOf="@+id/ceremonyButton"
         app:layout_constraintTop_toBottomOf="@+id/projectName"
-        app:srcCompat="@drawable/ic_marathon100"/>
+        app:srcCompat="@drawable/ic_marathon100" />
 
     <ImageButton
         android:id="@+id/swimmingButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="328dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="@string/description_image"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.181"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/projectName"
-        app:srcCompat="@drawable/ic_swimming100"
-        android:contentDescription="@string/description_image" />
+        app:layout_constraintTop_toBottomOf="@+id/ceremonyButton"
+        app:srcCompat="@drawable/ic_swimming100" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

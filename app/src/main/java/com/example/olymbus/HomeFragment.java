@@ -17,16 +17,21 @@ public class HomeFragment extends Fragment {
 
     private ImageButton ceremonyBut;
     private ImageButton marathonBut;
+    private ImageButton swimmingBut;
+    private ImageButton weightliftingBut;
+    private ImageButton divingBut;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull final LayoutInflater inflater, @Nullable final ViewGroup container, @Nullable Bundle savedInstanceState) {
 
-        View view;
-        view = inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
 
         ceremonyBut = view.findViewById(R.id.ceremonyButton);
         marathonBut = view.findViewById(R.id.marathonButton);
+        swimmingBut = view.findViewById(R.id.swimmingButton);
+        divingBut = view.findViewById(R.id.divingButton);
+        weightliftingBut = view.findViewById(R.id.weightliftingButton);
 
         ceremonyBut.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,6 +51,34 @@ public class HomeFragment extends Fragment {
                 fragmentTransaction.replace(R.id.fragment_container,athletic).commit();
             }
         });
+
+        swimmingBut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Swimming swimming = new Swimming();
+                FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_container,swimming).commit();
+            }
+        });
+
+        divingBut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Diving diving = new Diving();
+                FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_container,diving).commit();
+            }
+        });
+
+        weightliftingBut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                WeightLifting weightLifting = new WeightLifting();
+                FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_container,weightLifting).commit();
+            }
+        });
+
 
 
         return view;

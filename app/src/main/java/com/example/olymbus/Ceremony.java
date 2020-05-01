@@ -18,6 +18,7 @@ public class Ceremony extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_ceremony, container, false);
+
         bookCeremonyBut = view.findViewById(R.id.bookBus1Button);
 
         bookCeremonyBut.setOnClickListener(new View.OnClickListener() {
