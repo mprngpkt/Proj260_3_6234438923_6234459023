@@ -9,16 +9,15 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-public class TimeTableForAthletic extends Fragment {
+public class TimeTableForSwimming extends Fragment {
 
-    String[] timetable = {"Bus 1 \n Destination : Olympic Stadium \n Depart : 16:30 "};
+    String[] timetable = {"Bus 1 \n Destination : Tokyo Aquatics Centre \n Depart : 08.00 "};
     //String[] timeTableDescription = {"Destination : Olympic Stadium \n Depart : 16:30 ","Destination : Olympic Stadium \n Depart : 17:00 ","Destination : Olympic Stadium \n Depart : 17:30 "};
 //public static int getSize(){return 3;}
 
@@ -28,7 +27,7 @@ public class TimeTableForAthletic extends Fragment {
         View view = inflater.inflate(R.layout.layout_bustimetable, container, false);
 
         TextView txt = (TextView)view.findViewById(R.id.txtBusTimeTable);
-        txt.setText("Bus to Athletic");
+        txt.setText("Bus to Swimming");
 
 
         ListView listView = (ListView) view.findViewById(R.id.bustimetable);
@@ -46,9 +45,9 @@ public class TimeTableForAthletic extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 //if (position == 0) {
                    // Toast.makeText(getActivity(),"Bus 1 Selected",Toast.LENGTH_LONG).show(); //(current Activity,"message that you want to show",time that toast will show
-                    SeatingPlan2_1 seatingPlan21 = new SeatingPlan2_1();
+                    SeatingPlan1_1 seatingPlan11 = new SeatingPlan1_1();
                     FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-                    fragmentTransaction.replace(R.id.fragment_container, seatingPlan21).commit();
+                    fragmentTransaction.replace(R.id.fragment_container, seatingPlan11).commit();
                /* } else if (position == 1) {
                      Toast.makeText(getActivity(),"Bus 2 Selected",Toast.LENGTH_LONG).show();
                     SeatingPlan1_2 seatingPlan12 = new SeatingPlan1_2();

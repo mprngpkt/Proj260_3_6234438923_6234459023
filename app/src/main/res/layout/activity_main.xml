@@ -15,6 +15,7 @@
         android:id="@+id/bottom_navigaton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#D8E8E8"
         android:layout_alignParentBottom="true"
         app:menu="@menu/botton_navigation"
         />
