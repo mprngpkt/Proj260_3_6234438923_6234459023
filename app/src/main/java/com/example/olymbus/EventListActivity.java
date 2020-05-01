@@ -8,7 +8,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.ConditionVariable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,8 +16,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 public class EventListActivity extends AppCompatActivity {
 
@@ -57,7 +54,7 @@ public class EventListActivity extends AppCompatActivity {
         int rImg[];
 
         MyAdapter(Context c, String title[], String description[], int img[]){
-            super(c, R.layout.row_list, R.id.rowTitleTextView, title);
+            super(c, R.layout.row_list, R.id.textTitle, title);
             this.context = c;
             this.rTitle = title;
             this.rDescription = description;
@@ -69,11 +66,11 @@ public class EventListActivity extends AppCompatActivity {
         public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
             LayoutInflater layoutInflater = (LayoutInflater)getApplicationContext().getSystemService(LAYOUT_INFLATER_SERVICE);
             View row = layoutInflater.inflate(R.layout.row_list, parent, false);
-            ImageView images = row.findViewById(R.id.event_icon);
-            TextView myTitle = row.findViewById(R.id.rowTitleTextView);
-            TextView myDescription = row.findViewById(R.id.rowDescriptionTextView);
+           // ImageView images = row.findViewById(R.id.event_icon);
+            TextView myTitle = row.findViewById(R.id.textTitle);
+            TextView myDescription = row.findViewById(R.id.descriptionTextView);
 
-            images.setImageResource(icon[position]);
+           // images.setImageResource(icon[position]);
             myTitle.setText(mTitle[position]);
             myDescription.setText(mDescription[position]);
 

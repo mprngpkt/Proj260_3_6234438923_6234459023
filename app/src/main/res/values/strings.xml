@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Olymbus</string>
     <string name="your_schedule">ํYour Schedule</string>
-    <string name="bus_time_table">Bus Time Table</string>
+    <string name="bus_time_table">Bus To Ceremony</string>
     <string name="detail_image">Image</string>
     <string name="description_image">Image</string>
     <string name="event_name">TextView</string>

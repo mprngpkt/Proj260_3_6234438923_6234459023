@@ -146,18 +146,19 @@
         app:srcCompat="@drawable/driver" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/seat_plan"
-        android:textColor="@color/blue"
+
         android:fontFamily="sans-serif-condensed"
+        android:textColor="@color/blue"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/seatcolumn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
 
     <Button
         android:id="@+id/btnBook"
@@ -173,4 +174,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/seatcolumn"
         app:layout_constraintVertical_bias="0.8" />
+
+    <TextView
+        android:id="@+id/text_detail"
+        android:textColor="@color/blue"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/seatcolumn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle" />
 </androidx.constraintlayout.widget.ConstraintLayout>

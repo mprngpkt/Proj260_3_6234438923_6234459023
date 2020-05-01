@@ -1,4 +1,4 @@
-/*
+
 package com.example.olymbus;
 
 import android.os.Bundle;
@@ -56,4 +56,3 @@ public class BusTimeTable extends AppCompatActivity {
 
 
 }
-*/

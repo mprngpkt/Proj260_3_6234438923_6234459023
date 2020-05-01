@@ -24,9 +24,9 @@ public class Ceremony extends Fragment {
         bookCeremonyBut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TimeTableFragment timeTableFragment = new TimeTableFragment();
+                TimeTableForCeremony timeTableForCeremony = new TimeTableForCeremony();
                 FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.fragment_container,timeTableFragment).commit();
+                fragmentTransaction.replace(R.id.fragment_container, timeTableForCeremony).commit();
             }
         });
 

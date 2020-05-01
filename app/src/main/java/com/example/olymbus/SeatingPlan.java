@@ -1,10 +1,7 @@
 package com.example.olymbus;
 
-import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -13,12 +10,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TableLayout;
 import android.widget.TableRow;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 public class SeatingPlan extends Fragment {
     Button btnBack;
@@ -26,6 +25,7 @@ public class SeatingPlan extends Fragment {
     TableLayout timeTable;
     //seat
     Button btnseat1A;
+    /*
     Button btnseat1B;
     Button btnseat2A;
     Button btnseat2B;
@@ -35,7 +35,7 @@ public class SeatingPlan extends Fragment {
     Button btnseat4B;
     Button btnseat5A;
     Button btnseat5B;
-
+*/
 
 
 
@@ -45,21 +45,26 @@ public class SeatingPlan extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.layout_seatingplan, container, false);
 
-        //TimeTable
-        timeTable = (TableLayout) v.findViewById(R.id.seatcolumn);
+        TextView textView1=(TextView)v.findViewById(R.id.textTitle);
+        textView1.setText("Bus 1");
+        TextView textdetail = (TextView)v.findViewById(R.id.text_detail);
+        textdetail.setText("Destination : Olympic Stadium \n Depart : 16:30");
 
+        //TimeTable
+        timeTable = v.findViewById(R.id.seatcolumn);
+/*
         TableRow tableRow = new TableRow(getActivity());
         tableRow.setLayoutParams(new TableLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.MATCH_PARENT));
-        tableRow.addView(btnseat1A);
+        tableRow.addView(btnseat1A); */
         //1A
-        btnseat1A = v.findViewById (R.id.seat1A);
-        btnseat1A.setOnClickListener(new View.OnClickListener() {
+//        btnseat1A = v.findViewById (R.id.seat1A);
+      /*  btnseat1A.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 btnseat1A.didTouchFocusSelect();
                 //Toast.makeText("Selected",Toast.LENGTH_SHORT).show();
             }
-        });
+        });*/
         /*1B
         btnseat1B = v.findViewById(R.id.seat1B);
         btnseat1B.setOnClickListener(new View.OnClickListener() {
@@ -76,8 +81,10 @@ public class SeatingPlan extends Fragment {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), TimeTableFragment.class);
-                startActivity(intent);
+                TimeTableForCeremony timeTableForCeremony = new TimeTableForCeremony();
+                FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_container, timeTableForCeremony).commit();
+
             }
         });
 

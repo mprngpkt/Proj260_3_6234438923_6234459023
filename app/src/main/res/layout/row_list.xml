@@ -5,11 +5,6 @@
     android:orientation="horizontal"
     android:padding="16dp">
 
-    <ImageView
-        android:layout_width="75dp"
-        android:layout_height="75dp"
-        android:src="@mipmap/ic_launcher"
-        android:id="@+id/event_icon"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -17,7 +12,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/rowTitleTextView"
+            android:id="@+id/textTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Main Title"
@@ -28,7 +23,7 @@
             />
 
         <TextView
-            android:id="@+id/rowDescriptionTextView"
+            android:id="@+id/descriptionTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Sub Title"
