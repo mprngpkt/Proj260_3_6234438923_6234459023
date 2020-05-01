@@ -1,4 +1,4 @@
-/*
+
 package com.example.olymbus;
 
 import android.os.Bundle;
@@ -51,4 +51,3 @@ public class TimeTableFragment extends Fragment {
 
     }
 }
-*/

@@ -76,7 +76,7 @@ public class SeatingPlan extends Fragment {
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), BusTimeTable.class);
+                Intent intent = new Intent(getActivity(), TimeTableFragment.class);
                 startActivity(intent);
             }
         });
