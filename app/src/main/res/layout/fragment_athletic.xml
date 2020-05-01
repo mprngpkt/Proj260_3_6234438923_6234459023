@@ -19,7 +19,7 @@
         android:contentDescription="@string/detail_image" />
 
     <Button
-        android:id="@+id/bookBus1Button"
+        android:id="@+id/bookBus2Button"
         android:layout_width="107dp"
         android:layout_height="51dp"
         android:layout_marginEnd="16dp"

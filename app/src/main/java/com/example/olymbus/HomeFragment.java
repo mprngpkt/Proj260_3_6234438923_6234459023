@@ -15,7 +15,7 @@ import androidx.fragment.app.Fragment;
 public class HomeFragment extends Fragment {
 
     private ImageButton ceremonyBut;
-    private TextView textView;
+    private ImageButton marathonBut;
 
     @Nullable
     @Override
@@ -25,6 +25,7 @@ public class HomeFragment extends Fragment {
         view = inflater.inflate(R.layout.fragment_home, container, false);
 
         ceremonyBut = view.findViewById(R.id.ceremonyButton);
+        marathonBut = view.findViewById(R.id.marathonButton);
 
         ceremonyBut.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,6 +34,15 @@ public class HomeFragment extends Fragment {
                 startActivity(intent);
             }
         });
+
+        marathonBut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), Athletic.class);
+                startActivity(intent);
+            }
+        });
+
         /*String[] eventItems = {"Ceremony Opening Ceremony", "Athletics Marathon Final",
                 "Swimming Preliminary", "Swimming Freestyle/Medley", "Diving Springboard Semifinal",
                 "Diving Synchronized 3m Springboard Final", "Diving 10m Platform Semifinal",
