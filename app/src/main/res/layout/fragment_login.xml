@@ -29,7 +29,7 @@
             android:ems="10"
             android:layout_marginTop="10dp"
             android:inputType="textPersonName"
-            android:text="@string/userlog" />
+            android:hint="@string/userlog" />
 
         <EditText
             android:id="@+id/passEditText"
@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="@string/passlog" />
+            android:hint="@string/passlog" />
 
         <Button
             android:id="@+id/loginButton"

@@ -72,8 +72,8 @@ public class LoginFragment extends Fragment{
         return view;
     }
 
-    public void setCallbackFragment(CallbackFragment callbackFragment){
+    /*public void setCallbackFragment(CallbackFragment callbackFragment){
         this.callbackFragment = callbackFragment;
-    }
+    }*/
 
 }
