@@ -11,6 +11,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TableLayout;
+import android.widget.TableRow;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -21,7 +23,20 @@ import androidx.fragment.app.Fragment;
 public class SeatingPlan extends Fragment {
     Button btnBack;
     Button btnBook;
+    TableLayout timeTable;
+    //seat
     Button btnseat1A;
+    Button btnseat1B;
+    Button btnseat2A;
+    Button btnseat2B;
+    Button btnseat3A;
+    Button btnseat3B;
+    Button btnseat4A;
+    Button btnseat4B;
+    Button btnseat5A;
+    Button btnseat5B;
+
+
 
 
     //เชื่อมกับ .xml เมื่อใช้ extends fragment
@@ -30,9 +45,30 @@ public class SeatingPlan extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.layout_seatingplan, container, false);
 
-        //1A
-       // btnseat1A = (Button) v.findViewById (R.id.seat1A);
+        //TimeTable
+        timeTable = (TableLayout) v.findViewById(R.id.seatcolumn);
 
+        TableRow tableRow = new TableRow(getActivity());
+        tableRow.setLayoutParams(new TableLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.MATCH_PARENT));
+        tableRow.addView(btnseat1A);
+        //1A
+        btnseat1A = v.findViewById (R.id.seat1A);
+        btnseat1A.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                btnseat1A.didTouchFocusSelect();
+                //Toast.makeText("Selected",Toast.LENGTH_SHORT).show();
+            }
+        });
+        /*1B
+        btnseat1B = v.findViewById(R.id.seat1B);
+        btnseat1B.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+           */
 
         //back
         btnBack = (Button) v.findViewById(R.id.btnBack);
