@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -24,7 +25,7 @@ public class SeatingPlan extends Fragment {
     Button btnBook;
     TableLayout timeTable;
     //seat
-    Button btnseat1A;
+    ImageButton btnseat1A;
     /*
     Button btnseat1B;
     Button btnseat2A;
@@ -52,19 +53,16 @@ public class SeatingPlan extends Fragment {
 
         //TimeTable
         timeTable = v.findViewById(R.id.seatcolumn);
-/*
-        TableRow tableRow = new TableRow(getActivity());
-        tableRow.setLayoutParams(new TableLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.MATCH_PARENT));
-        tableRow.addView(btnseat1A); */
+
         //1A
-//        btnseat1A = v.findViewById (R.id.seat1A);
-      /*  btnseat1A.setOnClickListener(new View.OnClickListener() {
+       btnseat1A = v.findViewById (R.id.seat1A);
+        btnseat1A.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                btnseat1A.didTouchFocusSelect();
-                //Toast.makeText("Selected",Toast.LENGTH_SHORT).show();
+                btnseat1A.setSelected(true);
+                Toast.makeText(getContext(),"Selected",Toast.LENGTH_SHORT).show();
             }
-        });*/
+        });
         /*1B
         btnseat1B = v.findViewById(R.id.seat1B);
         btnseat1B.setOnClickListener(new View.OnClickListener() {
