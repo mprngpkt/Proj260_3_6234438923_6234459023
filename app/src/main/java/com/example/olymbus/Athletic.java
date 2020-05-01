@@ -12,23 +12,21 @@ import android.widget.Button;
 
 public class Athletic extends Fragment {
 
-    private Button bookAthleticBut;
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_athletic, container, false);
 
-        /*bookAthleticBut = view.findViewById(R.id.bookBus2Button);
+        Button bookAthleticBut = view.findViewById(R.id.bookBus2Button);
 
         bookAthleticBut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                TimeTableFragment timeTableFragment = new TimeTableFragment();
+                TimeTableForAthletic timeTableFragment = new TimeTableForAthletic();
                 FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
                 fragmentTransaction.replace(R.id.fragment_container,timeTableFragment).commit();
             }
-        });*/
+        });
 
         return view;
     }

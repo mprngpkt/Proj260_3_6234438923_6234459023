@@ -28,5 +28,13 @@
     <string name="title5">Weightlifting \n+109 kg Group A and \nVictory Ceremony Men</string>
     <string name="detail5">VENUE: Tokyo International Forum \n\n DATE: 05.08.20
         \n\n START TIME: 14.50 \n\n DURATION: 2.10 hrs \n\n Travel By Bus: 23 minutes</string>
+    <string name="passlog">Password</string>
+    <string name="userlog">Username</string>
+    <string name="loginbut">Login</string>
+    <string name="signupbut">SignUp</string>
+    <string name="logintext">Login</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

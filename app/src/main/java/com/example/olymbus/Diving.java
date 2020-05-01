@@ -13,6 +13,19 @@ public class Diving extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_diving, container, false);
+
+        View view = inflater.inflate(R.layout.fragment_diving, container, false);
+
+        /*Button bookDivingBut = view.findViewById(R.id.bookBus4Button);
+
+        bookDivingBut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TimeTableFragment timeTableFragment = new TimeTableFragment();
+                FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_container,timeTableFragment).commit();
+            }
+        });*/
+        return view;
     }
 }

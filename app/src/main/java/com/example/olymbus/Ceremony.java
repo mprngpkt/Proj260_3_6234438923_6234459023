@@ -12,14 +12,12 @@ import android.widget.Button;
 
 public class Ceremony extends Fragment {
 
-    private Button bookCeremonyBut;
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_ceremony, container, false);
 
-        bookCeremonyBut = view.findViewById(R.id.bookBus1Button);
+        Button bookCeremonyBut = view.findViewById(R.id.bookBus1Button);
 
         bookCeremonyBut.setOnClickListener(new View.OnClickListener() {
             @Override
