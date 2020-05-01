@@ -30,7 +30,7 @@ public class HomeFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        ceremonyBut = (ImageButton) view.findViewById(R.id.ceremonyButton);
+        ceremonyBut = view.findViewById(R.id.ceremonyButton);
 
         ceremonyBut.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,7 +62,7 @@ public class HomeFragment extends Fragment {
 
                 }*/
         return view;
-    };
+    }
 
 }
 
