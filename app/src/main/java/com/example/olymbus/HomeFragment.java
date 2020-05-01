@@ -47,28 +47,7 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        /*String[] eventItems = {"Ceremony Opening Ceremony", "Athletics Marathon Final",
-                "Swimming Preliminary", "Swimming Freestyle/Medley", "Diving Springboard Semifinal",
-                "Diving Synchronized 3m Springboard Final", "Diving 10m Platform Semifinal",
-                "Weightlifting 40 kg Group B", "Weightlifting 76 kg Group B", "Weightlifting 109 kg Group B",
-                "Weightlifting 109 kg Group A & Victory Ceremony"};
 
-        final ListView listView = view.findViewById(R.id.eventListView);
-
-        ArrayAdapter<String> listViewAdapter = new ArrayAdapter<String>(getActivity(),
-                android.R.layout.simple_list_item_1,eventItems);
-        listView.setAdapter(listViewAdapter);
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                switch (position){
-                    case 0: Intent in = new Intent(getActivity(), Ceremony.class);
-                            startActivity(in);
-                    case 1: textView.setText("Click 2");
-                    case 2: textView.setText("Click 3");
-
-                }*/
         return view;
     }
 
