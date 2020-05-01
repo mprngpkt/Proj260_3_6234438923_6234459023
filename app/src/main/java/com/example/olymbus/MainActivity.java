@@ -1,15 +1,12 @@
 package com.example.olymbus;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.telecom.Call;
 import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -54,7 +51,7 @@ public class MainActivity extends AppCompatActivity /*implements CallbackFragmen
 
                         case R.id.nav_home : selectedFragment = new HomeFragment(); break;
                         case R.id.nav_booking : selectedFragment = new BookingFragment(); break;
-                        case R.id.nav_profile : selectedFragment = new ProfileFragment(); break;
+                        case R.id.nav_profile : selectedFragment = new LoginFragment(); break;
                     }
                     getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                             selectedFragment).commit();
@@ -65,14 +62,14 @@ public class MainActivity extends AppCompatActivity /*implements CallbackFragmen
 
     /*public void addFragment(){
         LoginFragment fragment = new LoginFragment();
-        fragment.setCallbackFragment(this);
+        fragment.setCallbackFragment((CallbackFragment) this);
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.add(R.id.fragment_container,fragment).commit();
     }
 
     public void replaceFragment(){
-        Fragment fragment = new SignupFragment();
+        SignupFragment fragment = new SignupFragment();
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.addToBackStack(null);
