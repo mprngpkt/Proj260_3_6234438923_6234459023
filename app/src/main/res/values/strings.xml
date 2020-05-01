@@ -12,20 +12,20 @@
     <string name="seat_plan">Seat Plan</string>
     <string name="book">Book</string>
     <string name="back">Back</string>
-    <string name="project_name">Your Journey \n to the Olympics</string>
-    <string name="title1">Ceremony \n Opening Ceremony</string>
+    <string name="project_name">Your Journey \nto the Olympics</string>
+    <string name="title1">Ceremony \nOpening Ceremony</string>
     <string name="detail1">VENUE: Olympic Stadium \n\n DATE: 24.07.20
         \n\n START TIME: 20:00 \n\n DURATION: 3.0 hrs \n\n Travel By Bus: 30 minutes</string>
-    <string name="title2">Athletics \n Marathon Final Men</string>
+    <string name="title2">Athletics \nMarathon Final Men</string>
     <string name="detail2">VENUE: Olympic Stadium \n\n DATE: 08.08.20
         \n\n START TIME: 19:00 \n\n DURATION: 3.20 hrs \n\n Travel By Bus: 30 minutes</string>
-    <string name="title3">Swimming \n Preliminary Round \n Individuals</string>
+    <string name="title3">Swimming \nPreliminary Round \nIndividuals</string>
     <string name="detail3">VENUE: Tokyo Aquatics Centre \n\n DATE: 26.07.20
         \n\n START TIME: 10:30 \n\n DURATION: 2.0 hrs \n\n Travel By Bus: 45 minutes</string>
-    <string name="title4">Diving \n Springboard Semifinal \n Men</string>
+    <string name="title4">Diving \nSpringboard Semifinal \nMen</string>
     <string name="detail4">VENUE: Tokyo Aquatics Centre \n\n DATE: 04.08.20
         \n\n START TIME: 10:00 \n\n DURATION: 1.30 hrs \n\n Travel By Bus: 45 minutes</string>
-    <string name="title5">Weightlifting \n +109 kg Group A and \n Victory Ceremony Men</string>
+    <string name="title5">Weightlifting \n+109 kg Group A and \nVictory Ceremony Men</string>
     <string name="detail5">VENUE: Tokyo International Forum \n\n DATE: 05.08.20
         \n\n START TIME: 14.50 \n\n DURATION: 2.10 hrs \n\n Travel By Bus: 23 minutes</string>
 

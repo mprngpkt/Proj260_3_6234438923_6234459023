@@ -17,7 +17,7 @@ public class Athletic extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_ceremony, container, false);
+        View view = inflater.inflate(R.layout.fragment_athletic, container, false);
 
         /*bookAthleticBut = view.findViewById(R.id.bookBus2Button);
 
