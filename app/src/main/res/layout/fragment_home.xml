@@ -6,6 +6,20 @@
     android:layout_height="match_parent"
     android:id="@+id/relativeLayout">
 
+    <ImageButton
+        android:id="@+id/weightliftingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.976"
+        app:layout_constraintStart_toEndOf="@+id/divingButton"
+        app:layout_constraintTop_toBottomOf="@+id/marathonButton"
+        app:srcCompat="@drawable/ic_weightlifting100" />
+
     <TextView
         android:id="@+id/projectName"
         android:layout_width="wrap_content"
@@ -16,28 +30,60 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:layout_marginTop="4dp"
         android:gravity="center"
         android:text="@string/project_name"
-        android:textColor="#000"
+        android:textColor="@color/blue"
         android:textSize="36sp"
         android:textStyle="bold|italic"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.383" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/homeButton"
+    <ImageButton
+        android:id="@+id/ceremonyButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="11dp"
-        android:text="Start"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="40dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/projectName"
-        app:layout_constraintVertical_bias="0.156" />
+        app:srcCompat="@drawable/ic_ceremony100" />
+
+    <ImageButton
+        android:id="@+id/divingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ceremonyButton"
+        app:srcCompat="@drawable/ic_diving100" />
+
+    <ImageButton
+        android:id="@+id/marathonButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
+        app:layout_constraintStart_toEndOf="@+id/ceremonyButton"
+        app:layout_constraintTop_toBottomOf="@+id/projectName"
+        app:srcCompat="@drawable/ic_marathon100" />
+
+    <ImageButton
+        android:id="@+id/swimmingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="356dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/projectName"
+        app:srcCompat="@drawable/ic_swimming100" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
