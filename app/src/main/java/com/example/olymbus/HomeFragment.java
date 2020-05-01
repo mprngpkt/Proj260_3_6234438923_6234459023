@@ -11,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 public class HomeFragment extends Fragment {
 
@@ -30,16 +31,19 @@ public class HomeFragment extends Fragment {
         ceremonyBut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), Ceremony.class);
-                startActivity(intent);
+                Ceremony ceremony = new Ceremony();
+                FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_container,ceremony).commit();
+
             }
         });
 
         marathonBut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), Athletic.class);
-                startActivity(intent);
+                Athletic athletic = new Athletic();
+                FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+                fragmentTransaction.replace(R.id.fragment_container,athletic).commit();
             }
         });
 

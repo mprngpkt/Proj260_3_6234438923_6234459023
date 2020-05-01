@@ -59,4 +59,7 @@ public class Ceremony extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_ceremony, container, false);
     }
+
+
+
 }
